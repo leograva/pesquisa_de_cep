@@ -1,7 +1,7 @@
 # pesquisa_de_cep
 Pesquisa de CEP automatizada utilizando as bibliotecas pycep_correios e pandas.
 
-A pesquisa consiste em efetuar a leitura de uma planilha que contém uma lista de CEPS, efetuar a busca de cada um deles através da biblioteca pycep_correios e em seguida gerar uma nova planilha com os dados capturados.
+O script consiste em efetuar a leitura de uma planilha que contém uma lista de CEPS, efetuar a busca de cada um deles através da biblioteca pycep_correios e em seguida gerar uma nova planilha com os dados capturados.
 
 Arquivo de lista de CEP's
 
@@ -13,7 +13,7 @@ Arquivo gerado após o processamento
 
 Instruções de execução:
 
-- Instale as bibliotecas Pandas e Pycep_correios através do comandos abaixo:
+- Instale as bibliotecas pandas e pycep_correios através do comando abaixo:
 
     pip install pycep_correios pandas
 
@@ -22,8 +22,8 @@ Instruções de execução:
     python consulta_de_cep.py
     python3 consulta_de_cep.py
     
-- Após a execução é necessário aguardar até que o Processamento seja finalizado como na imagem abaixo:
+- Após a execução é necessário aguardar até que o processamento seja finalizado como na imagem abaixo:
 
 ![image](https://user-images.githubusercontent.com/34873898/230697496-7598e0f1-5908-4d19-93d0-e02ced70dc51.png)
 
-- Por fim, abra o arquivo gerado ("lista_de_ceps_preenchidos.xlsx") e o arquivo estará com as informações capturadas :) 
+- Por fim, abra o arquivo gerado ("lista_de_ceps_preenchidos.xlsx") e o arquivo estará com as informações preenchidas :) 
