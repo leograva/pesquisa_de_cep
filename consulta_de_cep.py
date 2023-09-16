@@ -26,13 +26,15 @@ for index, row in df.iterrows():
     #EFETUANDO A REQUISIÇÃO 
     address = bc.get_address_from_cep(cep)
 
+    print(address)
+
     #ADICIONANDO INFORMAÇÕES CAPTURADAS NOS ARRAYS
     ceps.append(address['cep'])
-    logradouros.append(address['logradouro'])
-    bairros.append(address['bairro'])
-    cidades.append(address['cidade'])
+    logradouros.append(address['street'])
+    bairros.append(address['district'])
+    cidades.append(address['city'])
     ufs.append(address['uf'])
-    complementos.append(address['complemento'])
+    complementos.append(address['complement'])
     
     #DELAY DE 1 SEGUNDO PARA NÃO SOBRECARREGAR A API DE CONSULTA
     time.sleep(1)
