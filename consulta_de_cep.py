@@ -1,5 +1,5 @@
 #IMPORTAÇÃO DE BIBLIOTECAS
-from pycep_correios import get_address_from_cep, WebService, exceptions
+import brazilcep as bc
 import pandas as pd
 import time
 
@@ -24,7 +24,7 @@ for index, row in df.iterrows():
     cep = df['CEP'][index]
     
     #EFETUANDO A REQUISIÇÃO 
-    address = get_address_from_cep(cep, webservice=WebService.CORREIOS)
+    address = bc.get_address_from_cep(cep)
 
     #ADICIONANDO INFORMAÇÕES CAPTURADAS NOS ARRAYS
     ceps.append(address['cep'])
